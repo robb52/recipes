@@ -16,6 +16,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rails-controller-testing'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
