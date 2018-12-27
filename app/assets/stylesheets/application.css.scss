@@ -87,6 +87,44 @@ footer {
   text-align: center;
 }
 
+.col-md-8 {
+  border: solid 1px black;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.card-footer {
+  margin-top: 50px;
+}
+
+h4.description {
+  text-align: center;
+}
+
+.col-md-6.offset-3 {
+  border: solid 1px gray;
+  border-radius: 3px;
+}
+
+a.tag {
+  text-decoration: none;
+  color: black;
+}
+
+a.tag:hover {
+  color: red;
+}
+
+.btn.btn-primary.btn-lg.create {
+  background-color: #9EE102;
+  border: solid 1px black;
+  color: black;
+}
+
+.btn.btn-primary.btn-lg.create:hover {
+  color: #fff;
+}
+
 
 
 
