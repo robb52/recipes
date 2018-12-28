@@ -6,7 +6,7 @@
   <hr />
   <%= simple_format(@recipe.description) %>
   <hr />
-  <div class="pull-right">
+  <div class="text-right chef">
     <p class="center">
       <em>Crerated by:</em>
     </p>
@@ -15,8 +15,13 @@
     </p>
     <p class="center">
       <small><%= @recipe.chef.chefname.capitalize %></small>
-      <div class="pull-right"><%= time_ago_in_words(@recipe.created_at) %> ago</div>
+      <div class="text-right"><%= time_ago_in_words(@recipe.created_at) %> ago</div>
     </p>
   </div>
-
+  <div class="recipe-action">
+    <%= link_to "Edit this recipe", edit_recipe_path(@recipe), class: "btn btn-warning btn-sm" %>
+    <%= link_to "Delete this recipe", recipe_path(@recipe), method: :delete,
+                                      data: { confirm: "Are you sure?" },
+                                      class: "btn btn-danger btn-sm" %>
+  </div>
 </div>
