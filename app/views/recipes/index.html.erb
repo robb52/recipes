@@ -1,10 +1,10 @@
-<%= render 'shared/page_title', title: "showing all recipes" %>
+<%= render 'shared/page_title', title: "Recipes" %>
 
 <% @recipes.each do |recipe| %>
   <div class="row">
     <div class="col-md-2">
       <section class="chef-info center">
-        <%= gravatar_for(recipe.chef, size: 100) %>
+        <%= gravatar_for(recipe.chef, size: 85) %>
       </section>
     </div>
     <div class="col-md-8 well" >
