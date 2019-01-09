@@ -1,3 +1,8 @@
 <%= render 'shared/page_title', title: "Recipes" %>
 
 <%= render 'recipe', obj: @recipes %>
+
+
+<div class="digg_pagination">
+    <%= will_paginate @recipes, :container => true %>
+</div>
