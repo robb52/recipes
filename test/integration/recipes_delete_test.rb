@@ -7,7 +7,8 @@ class RecipesDeleteTest < ActionDispatch::IntegrationTest
     @recipe = Recipe.create(name: "vegetable saute", description: "great vegetable saute, add vege and oil", chef: @chef)
   end
 
-  test "successfully delete a recipe" do  
+  test "successfully delete a recipe" do
+    sing_in_as(@chef, "password")  
     get recipe_path(@recipe)
     assert_template 'recipes/show'
     assert_select 'a[href=?]', recipe_path(@recipe), text: "Delete recipe"

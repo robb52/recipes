@@ -21,10 +21,12 @@
     </p>
   </div>
   <div class="recipe-action">
-    <%= link_to "Edit recipe", edit_recipe_path(@recipe), class: "btn btn-success btn-sm" %>
-    <%= link_to "Delete recipe", recipe_path(@recipe), method: :delete,
+    <% if logged_in? && current_chef == @recipe.chef %>
+      <%= link_to "Edit recipe", edit_recipe_path(@recipe), class: "btn btn-success btn-sm" %>
+      <%= link_to "Delete recipe", recipe_path(@recipe), method: :delete,
                                       data: { confirm: "Are you sure?" },
                                       class: "btn btn-danger btn-sm" %>
+    <% end %>
     <%= link_to "Return to recipes", recipes_path, class: "btn btn-primary btn-sm" %>
   </div>
 </div>
