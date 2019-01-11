@@ -374,3 +374,44 @@ a.title {
     clear: both;
     visibility: hidden; 
 }
+
+.btn.btn-danger.btn-sm:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.link.c {
+  color: #006600;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.link.c:hover {
+  color: yellow;
+}
+
+.link.r {
+  color: #006600;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.link.r:hover {
+  color: yellow;
+}
+
+#navbarDropdown.nav-link.dropdown-toggle {
+  color: #006600;
+}
+#navbarDropdown.nav-link.dropdown-toggle:hover {
+  color: yellow;
+}
+
+
+
+
+
+
+

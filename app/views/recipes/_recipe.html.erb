@@ -11,7 +11,7 @@
       <p>
         <span class="quiet">Created <%= time_ago_in_words(recipe.created_at) %>ago</span>
       </p>
-      <% if logged_in? && current_chef == recipe.chef %>
+      <% if logged_in? && (current_chef == recipe.chef || current_chef.admin) %>
         <div class="recipe-actions">
           <%= link_to "Edit recipe", edit_recipe_path(recipe), class: "btn btn-success btn-sm" %>
           <%= link_to "Delete recipe", recipe_path(recipe), method: :delete,

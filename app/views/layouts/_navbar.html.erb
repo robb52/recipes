@@ -9,11 +9,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <div class="nav-item active">
-        <%= link_to "Chefs" , chefs_path %>
-        <%= link_to "All Recipes", recipes_path %>
+        <%= link_to "Chefs" , chefs_path, class: "link c" %>
+        <%= link_to "All Recipes", recipes_path, class: "link r" %>
       </div>
       <% if logged_in? %>  
-        <li class="nav-item dropdown">
+        <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Recipes
           </a>
@@ -23,7 +23,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </li>
+        </div>
         <% end %>
     </ul>
     <div class="navbar-nav search mr-auto">
@@ -36,7 +36,7 @@
     <% if logged_in? %>
       <div class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <%= current_chef.chefname.capitalize %>'s Profile
+        <%= current_chef.chefname.capitalize %>'s Profile <%= "Admin" if current_chef.admin? %>
         </a>
         <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
           <li><%= link_to "View your profile", chef_path(current_chef) %></li>
