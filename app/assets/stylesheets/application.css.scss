@@ -409,6 +409,60 @@ a.title {
   color: yellow;
 }
 
+a.pf-view {
+  text-decoration: none;
+  color: red;
+}
+
+a.pf-view:hover {
+  color: white;
+}
+
+a.pf-edit {
+  text-decoration: none;
+  color: red;
+}
+
+a.pf-edit:hover {
+  color: white;
+}
+
+div.dropdown-menu.text-center {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  background-color: #9EE102;
+}
+
+a.pf-logout {
+  text-decoration: none;
+  color: red;
+}
+
+a.pf-logout:hover {
+  color: white;
+}
+
+a.new-recipe {
+  text-decoration: none;
+  color: red;
+}
+
+a.new-recipe:hover {
+  color: white;
+}
+
+a.nav-login {
+  text-decoration: none;
+  color: #006600;
+}
+
+a.nav-login:hover {
+  color: yellow;
+}
+
+
+
+
 
 
 
