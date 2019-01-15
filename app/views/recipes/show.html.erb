@@ -6,6 +6,9 @@
   <hr />
   <%= simple_format(@recipe.description) %>
   <hr />
+  <% if @recipe.ingredients.any? %>
+    <p>Ingredients: <%= render @recipe.ingredients %></p>
+  <% end %>
   <div class="text-right chef">
     <p class="center">
       <div class="text">
@@ -13,7 +16,7 @@
       </div>
     </p>
     <p class="center">
-      <%= link_to gravatar_for(@recipe.chef), recipes_path %>
+      <%= link_to gravatar_for(@recipe.chef), chef_path(@recipe.chef) %>
     </p>
     <p class="center">
       <%= @recipe.chef.chefname.capitalize %>

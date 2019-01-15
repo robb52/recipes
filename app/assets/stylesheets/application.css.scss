@@ -158,6 +158,7 @@ a.tag:hover {
 .img-circle {
   margin-top: 80px;
   margin-left: 40px;
+  padding-bottom: 10px;
 }
 
 a.link-font {
@@ -459,6 +460,71 @@ a.nav-login {
 a.nav-login:hover {
   color: yellow;
 }
+
+input.form-control.mr-sm-2 {
+  margin-right: auto;
+}
+  
+a.ingredient {
+  color: red;
+  text-decoration: none;
+}
+
+a.ingredient:hover {
+  color: white;
+}
+
+a.each-ing {
+  color: red;
+  text-decoration: none;
+}
+
+a.each-ing:hover {
+  color: white;
+}
+
+a.new-ing {
+  color: red;
+  text-decoration: none;
+}
+
+a.new-ing:hover {
+  color: white;
+}
+
+.badge.badge-pill {
+  margin: 2px;
+  background-color: #9EE102;
+  border: 1px solid black;
+}
+
+a.ing-pill {
+  text-decoration: none;
+  color: white;
+}
+
+a.ing-pill:hover {
+  color: red;
+}
+
+span.quiet {
+ margin-left: -8px;
+}
+
+.checkbox-inline.input_checkbox {
+  padding: 7px;
+  margin-left: 5px;
+}
+
+input#recipe_ingredient_ids.checkbox {
+  margin-right: 5px;
+
+}
+
+
+
+
+
 
 
 
