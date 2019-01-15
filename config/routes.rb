@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get 'pages/home', to: 'pages#home'
 
-  resources :recipes
+  resources :recipes do
+    resources :comments, only: [:create]
+  end
 
   get '/signup', to: 'chefs#new'
 
