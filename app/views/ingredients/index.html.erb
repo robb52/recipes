@@ -4,7 +4,7 @@
   <% @ingredients.each do |ing| %>
     <ul class="listing">
       <div class="row">
-        <div class="well col-md-6 offset-3">
+        <div class="well ing col-md-6 offset-3">
           <li class="chef-title"><%= link_to ing.name.capitalize, ingredient_path(ing), class: "title" %></li>
           <li><small><%= pluralize(ing.recipes.count, "recipe") if ing.recipes %></small></li>
           <% if logged_in? && current_chef.admin? %>
