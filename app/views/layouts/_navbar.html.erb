@@ -12,7 +12,8 @@
         <%= link_to "Chefs" , chefs_path, class: "link c" %>
         <%= link_to "All Recipes", recipes_path, class: "link r" %>
       </div>
-      <% if logged_in? %>  
+      <% if logged_in? %> 
+        <%= link_to "ChefChat", chat_path, class: "link chef" %> 
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Recipes

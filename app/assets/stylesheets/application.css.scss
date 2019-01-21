@@ -145,7 +145,7 @@ a.tag:hover {
 }
 
 .text-right.chef {
-  margin-bottom: -40px;
+  margin-bottom: -20px;
 }
 
 .recipe-action {
@@ -155,10 +155,8 @@ a.tag:hover {
   }
 }
 
-.img-circle {
-  margin-top: 80px;
-  margin-left: 40px;
-  padding-bottom: 10px;
+.rounded-circle {
+
 }
 
 a.link-font {
@@ -303,8 +301,7 @@ h1 {
 }
 
 .col-md-10.offset-5 {
-  margin-left: 437px;
-  margin-top: -60px;
+ 
 }
 
 .listing {
@@ -314,9 +311,8 @@ h1 {
 }
 
 .chef-img {
-  margin-top: -30px;
-  margin-bottom: 30px;
-  margin-right: 35px;
+  margin-top: 30px;
+  
 }
 
 .chef-title {
@@ -401,6 +397,16 @@ a.title {
 }
 
 .link.r:hover {
+  color: yellow;
+}
+
+.link.chef {
+  color: #006600;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.link.chef:hover {
   color: yellow;
 }
 
@@ -538,6 +544,51 @@ span.quiet {
 .well.ing.col-md-6.offset-3 {
   background-image: image-url('spice-6.jpg');
 }
+
+.col-md-10.center-block {
+  float: none;
+  margin-left: 150px;
+}
+
+.col-md-10.message-container {
+  .form-control {
+    float: left;
+    width: 85%;
+  }
+  .btn {
+    float: right;
+    position: relative;
+    height: 59px;
+    width: 11%;
+    margin-left: 3px;
+  }
+}
+
+.message {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.messages {
+  border: 1px solid #eaeaea;
+  height: 16em;
+  position: relative;
+  overflow: auto;
+}
+
+.content {
+ 
+}
+
+.chef_info {
+  margin-top: 30px;
+}
+
+.pagination.text-center {
+  margin-left: -90px;
+}
+
+
 
 
 
