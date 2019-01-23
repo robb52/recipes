@@ -1,6 +1,7 @@
 <% obj.each do |recipe| %>
   <div class="row">
     <div class="col-md-2">
+      <%= image_tag(recipe.image.url, size: "100x100", class: "recipe-img")if recipe.image? %>
       <section class="chef_info center">
         <%= gravatar_for(recipe.chef, size: 85) %>
       </section>
@@ -22,6 +23,17 @@
                                         class: "btn btn-danger btn-sm" %>
         </div>
       <% end %>
+
+      <div class="row">
+        <div calss="pull-left liking">
+          <%= link_to like_recipe_path(recipe, like: true), method: :post do %>
+            <i class="fas fa-smile-beam"></i>
+          <% end %> <%= recipe.thumbs_up_total %>
+          <%= link_to like_recipe_path(recipe, like: false), method: :post do %>
+            <i class="fas fa-frown"></i>
+          <% end %> <%= recipe.thumbs_down_total %>
+        </div>
+      </div>
     </div>
   </div> 
 <% end %>

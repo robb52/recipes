@@ -1,6 +1,9 @@
 <%= render 'shared/page_title', title: @recipe.name %>
 
 <div class="col-md-6 offset-3">
+  <div align="center">
+    <%= image_tag @recipe.image.url if @recipe.image? %>
+  </div>
 
   <h4 class="description"><storng>Steps: </storng></h4>
   <hr />
@@ -13,7 +16,7 @@
     <p class="center">
         Created by:
     </p>
-    <p class="center">
+    <p class="center icon">
       <%= link_to gravatar_for(@recipe.chef), chef_path(@recipe.chef) %>
     </p>
     <p class="center">
@@ -55,6 +58,16 @@
        <hr />
     </div>
   </div>
+    <!--<div class="row liking">
+      <div class="row col-md-6 offset-2">
+        <%#= link_to like_recipe_path(@recipe, like:true), method: :post do %>
+          <i class="fas fa-smile-beam"></i>
+        <%# end %> <%= @recipe.thumbs_up_total %>
+        <%#= link_to like_recipe_path(@recipe, like:false), method: :post do %>
+          <i class="fas fa-frown"></i>
+        <%# end %> <%= @recipe.thumbs_down_total %>
+      </div>
+    </div>-->
 <% end %>
 
 <% if @recipe.comments != 0 %>

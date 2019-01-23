@@ -155,10 +155,6 @@ a.tag:hover {
   }
 }
 
-.rounded-circle {
-
-}
-
 a.link-font {
   font-family: 'Volkhov', serif;
   display: inline-block;
@@ -225,8 +221,14 @@ h1 {
 }
 
 .center {
-  font-size: 20px;
-  margin-top: -30px;
+
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+p.center.icon {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .text-right {
@@ -576,25 +578,41 @@ span.quiet {
   overflow: auto;
 }
 
-.content {
- 
-}
-
 .chef_info {
   margin-top: 30px;
+  margin-left: 30px;
 }
 
 .pagination.text-center {
   margin-left: -90px;
 }
 
+.fas.fa-smile-beam {
+  color: yellow;
+  font-size: 30px;
+  padding-right: 3px;
+}
 
+.fas.fa-frown {
+  color: yellow;
+  font-size: 29px;
+  padding-right: 3px;
+  padding-left: 5px;
+}
 
+.liking {
+  padding-right: 10px;
+}
 
+.row.liking {
+  color: red;
+}
 
+img {
+ border-radius: 4px;
+}
 
-
-
-
-
-
+.recipe-img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
