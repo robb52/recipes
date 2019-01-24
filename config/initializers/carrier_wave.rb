@@ -7,6 +7,9 @@ if Rails.env.production?
       :aws_secret_access_key => ENV['S3_SECRET_KEY']
     }
     config.fog_directory = ENV['S3_BUCKET']
-   
+    config.storage = :fog
+  else
+    config.storage = :file
+    config.enable_processing = Rails.env.development?
   end
 end
